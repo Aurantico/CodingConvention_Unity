@@ -25,7 +25,7 @@ Please keep in mind that we should always be using SOLID principles of OOP
 ***
 ## **Naming Conventions**
 
-All all times meaningful names should be used for any and all of the parts of the code, from namespaces to local variables  
+At all times meaningful names should be used for any and all of the parts of the code, from namespaces to local variables  
 Please avoid using Hungarian Notation. If our code architecture is good, a simple naming convention like the one following is perfect.
 
 ***
