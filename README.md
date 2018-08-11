@@ -18,7 +18,7 @@ Please keep in mind that we should always be using SOLID principles of OOP
 - Single Responsibility
 - Open/Close
 - Liskov Substitution
-- Iterface Segregation
+- Interface Segregation
 - Dependency Inversion
 
 ***
