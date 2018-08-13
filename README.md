@@ -12,16 +12,17 @@ Keep in mind basic concepts of OOP
 - Polymorphism
 - Composition over Inheritance
 - Good Design Patterns
-- **DO NOT use Singletons (DONT!!!)**
+- **DO NOT use Singletons (Try to avoid at all costs)**
 
-Please keep in mind that we should always be using SOLID principles of OOP
+Try to use SOLID principles of OOP as much as possible  
+Keep in mind:
 - Single Responsibility
 - Open/Close
 - Liskov Substitution
 - Interface Segregation
 - Dependency Inversion
 
-***
+
 ***
 ## **Naming Conventions**
 
@@ -141,7 +142,7 @@ public class SomeClass
 	}
 }
 ```
-***
+
 ***
 ## Layout Convention
 - Write only one statement per line.
@@ -178,12 +179,10 @@ void MyFunction(int example1, string example2, bool example3)
 ``` csharp
 if(boolVal == false)
 {
-	...
+	//Code Here
 }
 ```
 
-
-***
 ***
 ## Project Organization 
 
@@ -191,7 +190,9 @@ Try to keep Systems compiled together inside their own folder structure, instead
 
 	Asstes
 		+ Addons
-			+ //External Addons if possible
+		+ //External Addons if possible
+			+ //With their folder structures
+			+ //...
 		+ Notifications
 			+ Scripts
 			+ Scenes
@@ -210,7 +211,29 @@ Try to keep Systems compiled together inside their own folder structure, instead
 
 This will allow much more organized files and folder and could potentially greatly decrease compilation time with the Incremental compiler  
 
-  
+***
+Use interpolating String when using .Net 4.x  
+Do Not concatenate strings
+```csharp
 
+	private void ProperWay_InterpolatedStrings()
+	{
+		string str1 = "Hello";
+		string str2 = "World";
+
+		Debug.Log($"Interpolating these two strings: {str1} {str2}!");
+	}
+
+	private void DoNotConcatStrings()
+	{
+		string str1 = "Hello";
+		string str2 = "World";
+
+		Debug.Log("Concatenating these two strings: "+ str1 +" "+ str2);
+	}
+
+```
+
+***
 /// This is under construction...  
-/// Lets all complete this Guidelines as we go!
+/// Let's all complete these guidelines as we go!
