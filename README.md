@@ -190,30 +190,30 @@ Try to keep Systems compiled together inside their own folder structure, instead
 
 	Asstes
 		+ Addons
-		+ //External Addons if possible
-			+ //With their folder structures
-			+ //...
-		+ Notifications
-			+ Scripts
-			+ Scenes
-			+ Prefabs
-			+ ...
-		+ Networking
-			+ Scripts
-			+ Scenes
-			+ Prefabs
-			+ ...
-		+ Gameplay
-			+ Scripts
-			+ Scenes
-			+ Prefabs
-			+ ...
+			+ //External Addons if possible
+				+ //With their folder structures
+				+ //...
+			+ Notifications
+				+ Scripts
+				+ Scenes
+				+ Prefabs
+				+ ...
+			+ Networking
+				+ Scripts
+				+ Scenes
+				+ Prefabs
+				+ ...
+			+ EdicationalPointsSystem
+				+ Scripts
+				+ Scenes
+				+ Prefabs
+				+ ...
 
 This will allow much more organized files and folder and could potentially greatly decrease compilation time with the Incremental compiler  
 
 ***
-Use interpolating String when using .Net 4.x  
-Do Not concatenate strings
+Use interpolating Strings when using .Net 4.x  
+**Do Not** concatenate strings
 ```csharp
 private void ProperWay_InterpolatedStrings()
 {
