@@ -215,23 +215,21 @@ This will allow much more organized files and folder and could potentially great
 Use interpolating String when using .Net 4.x  
 Do Not concatenate strings
 ```csharp
+private void ProperWay_InterpolatedStrings()
+{
+	string str1 = "Hello";
+	string str2 = "World";
 
-	private void ProperWay_InterpolatedStrings()
-	{
-		string str1 = "Hello";
-		string str2 = "World";
+	Debug.Log($"Interpolating these two strings: {str1} {str2}!");
+}
 
-		Debug.Log($"Interpolating these two strings: {str1} {str2}!");
-	}
+private void DoNotConcatStrings()
+{
+	string str1 = "Hello";
+	string str2 = "World";
 
-	private void DoNotConcatStrings()
-	{
-		string str1 = "Hello";
-		string str2 = "World";
-
-		Debug.Log("Concatenating these two strings: "+ str1 +" "+ str2);
-	}
-
+	Debug.Log("Concatenating these two strings: "+ str1 +" "+ str2);
+}
 ```
 
 ***
