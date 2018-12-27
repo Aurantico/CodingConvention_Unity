@@ -19,10 +19,10 @@ Law of Demeter:
 - Try to always Keep it in mind, no need to force it's use 100% of the time
 - Avoid Train Wrecks: *obj.GetX().GetY().GetZ().DoSomething();*
 - You may call methods of objects that are:
-	1. Passed as arguments
-	2. Created locally
-	3. Instance variables
-	4. Globals
+	- Passed as arguments
+	- Created locally
+	- Instance variables
+	- Globals
 
 Try to use SOLID principles of OOP as much as possible  
 Keep in mind:
