@@ -12,7 +12,17 @@ Keep in mind basic concepts of OOP
 - Polymorphism
 - Composition over Inheritance
 - Good Design Patterns
-- **DO NOT use Singletons (Try to avoid at all costs)**
+- **DO NOT use Singletons (Avoid at all costs)**
+
+Law of Demeter:
+- Tell Dont Ask
+- Try to always Keep it in mind, no need to force it's use 100% of the time
+- Avoid Train Wrecks: *obj.GetX().GetY().GetZ().DoSomething();*
+- You may call methods of objects that are:
+	1. Passed as arguments
+	2. Created locally
+	3. Instance variables
+	4. Globals
 
 Try to use SOLID principles of OOP as much as possible  
 Keep in mind:
